@@ -17,6 +17,21 @@ Remember when you see ```“$”``` or ```“C:\>”``` in these notes that is t
 
  		$  MAC
 		C:\>  WINDOWS
+		
+####Special folders/direcotries
+
+Users home directory, ex. /Users/katyaradul (go to home folder) 
+
+	$ cd ~ 
+	
+Current directory
+	
+	$ ls .
+
+Parent of the current directory (move up one folder)
+	
+	$ cd ..
+		
 ####Navigation
 
 
@@ -102,15 +117,8 @@ Here are some to help you keep up (on Mac and Linux):
 **Control + l**: Clear the screen
 
 
-## Homework
-
-- [Command Line Crash Course](http://cli.learncodethehardway.org/book/) (Read up through "Removing a File")
-
-- [Intro to Git Videos](http://git-scm.com/videos)
 
 
 ## Still Feel Lost? More resources
 
 - [GitHub Cheat Sheet](https://na1.salesforce.com/help/doc/en/salesforce_git_developer_cheatsheet.pdf)
-
-- [Intro to Git Tutorial](http://www.codeschool.com/courses/try-git) from Code School.
