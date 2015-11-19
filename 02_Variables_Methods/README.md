@@ -10,6 +10,9 @@
 
 DUE on Tuesday 24th (because of Thanksgiving)
 
+###Slides
+https://docs.google.com/presentation/d/1p4H_PifhLIwrCKzKHCMQkb1_xWIKuddgUCh3PzxamZc/edit?usp=sharing
+
 ###Learning Objectives
 
 
@@ -24,10 +27,10 @@ DUE on Tuesday 24th (because of Thanksgiving)
 | Time        | Topic| GA ICLs| Comments |
 | ------------- |:-------------|:-------------------|:-------------------|
 | 10 min | Review | | Git & GitHub |
-| 15 min | Intro To Programming | ex - [Robot Pseudo Code](instr_exercise_notes.md) | |
-| 55 min | IRB, Data Types & Variables, Debugging | code demo - [instr_demo_variables](instr_code_demos/instr_demo_variables.rb)<br/> | Robot exercise and Student exercise|
-| 55 min | Methods | code demo -[instr_demo_methods](instr_code_demos/instr_demo_methods.rb)| Also in-class exercise ex_methods.rb |
-| 15 min | Conditionals | ex_conditionals.rb | There is no code demo for this topic.  |
+| 15 min | Intro To Programming | ex - Robot Pseudo Code | |
+| 55 min | IRB, Data Types & Variables, Debugging | code demo variables <br/> | Robot exercise and Student exercise|
+| 55 min | Methods | code demo methods| in-class exercise ex_methods.rb  |
+| 15 min | Conditionals | There is no code demo for this topic.  | ex_conditionals.rb |
 | 15 min | Lab Time | Secret Number 1 | Start homework |
 
 
