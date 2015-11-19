@@ -4,6 +4,12 @@
 
 ##Lesson 2 - Variables & Conditional Logic
 
+###Homework
+
+-	[Secret_Number 1](https://github.com/generalassembly-studio/BEWD_Curriculum/blob/master/Homework/Ruby/Secret_Number/secret_number.rb).
+
+DUE on Tuesday 24th (because of Thanksgiving)
+
 ###Learning Objectives
 
 
@@ -24,9 +30,4 @@
 | 15 min | Conditionals | ex_conditionals.rb | There is no code demo for this topic.  |
 | 15 min | Lab Time | Secret Number 1 | Start homework |
 
-###Homework
-
--	[Secret_Number 1](https://github.com/generalassembly-studio/BEWD_Curriculum/blob/master/Homework/Ruby/Secret_Number/secret_number.rb).
-
-DUE on Tuesday 24th (because of Thanksgiving)
 
