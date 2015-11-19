@@ -6,7 +6,7 @@
 
 ###Homework
 
--	[Secret_Number 1](https://github.com/generalassembly-studio/BEWD_Curriculum/blob/master/Homework/Ruby/Secret_Number/secret_number.rb).
+-	[Secret_Number 1](https://github.com/kradul/bewd_sf_12/blob/master/02_Variables_Methods/hw_secret_number1.rb).
 
 DUE on Tuesday 24th (because of Thanksgiving)
 
