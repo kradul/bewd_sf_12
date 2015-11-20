@@ -12,6 +12,8 @@ Our robot is awesome and can make large cakes for more people,
 The robot will ask how many servings of cake you want. 
 =end
 
+require "pry"
+
 puts "How many servings of cake do you want?"
 servings = gets.to_i
 
@@ -21,7 +23,7 @@ chocolate = gets.downcase.chomp #downcase in case the user type "YES" or "Yes" i
 	#chomp gets rid of whitespace
 
 def add_ingredient bowl, ingredient, cups, servings
- bowl += ingredient + (cups*servings).to_i
+ bowl += ingredient + (cups*servings).to_s
 end
 
 
@@ -33,9 +35,9 @@ def bake_cake servings
 	oven_on = true
 	puts "Is the oven on? " + oven_on.to_s
 
-	bowl += add_ingredient bowl, "flour", 2, servings
-	bowl += add_ingredient bowl, "sugar", 1, servings
-	bowl += add_ingredient bowl, "egg", 2, servings
+	bowl = add_ingredient bowl, "flour", 2, servings
+	bowl = add_ingredient bowl, "sugar", 1, servings
+	bowl = add_ingredient bowl, "egg", 2, servings
 
 	#ADD a conditional statement, check to see if the user wants chocolate
 	#IF the user wants chocolate, add chocolate! 1 cup per serving
