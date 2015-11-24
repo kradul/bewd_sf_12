@@ -6,7 +6,7 @@
 
 -	Finish ex_teddit_hashes.rb for Tue Dec 1.
 
-###Homework
+###Slides
 
 Slides: https://drive.google.com/open?id=1XOsPRYBu8rP9tyqbVVk773lGUM9XHAj_7cW9L_CpYP8
 
