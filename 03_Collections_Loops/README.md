@@ -4,7 +4,10 @@
 
 ###Homework
 
--	Finish ex_teddit_hashes.rb for Tue Dec 1.
+-	Finish STEP 1 ex_teddit_hashes.rb for Tue Dec 1. (STEP 2 involves loops which we didn't finish covering in class.)
+
+- Homework 1 solution is posted.
+
 
 ###Slides
 
