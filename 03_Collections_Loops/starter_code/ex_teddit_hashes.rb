@@ -13,18 +13,19 @@
 # Use a loop, so that your program continues to ask a user for stories until they chose to quit. ("Would you like to add another story? Enter 'y' or 'n'")
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
-#
 
 def get_input
   gets.strip
 end
 
-def calculate_upvotes(story, category)
+def calculate_upvotes(story)
   upvotes = 1
-
-  if story.downcase.include? 'cat'
+  title = story[:title]
+  category = story[:category]
+  # Could I also put here story = [title:title, category:category]? 
+  if title.downcase.include? 'cat'
     upvotes *= 5
-  elsif story.downcase.include? 'bacon'
+  elsif title.downcase.include? 'bacon'
     upvotes *= 8
   end
 
@@ -35,10 +36,57 @@ def calculate_upvotes(story, category)
   upvotes
 end
 
+stories = []
+
 puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
+story = {}
 puts "Please enter a News story:"
-story = get_input
+title = get_input
+story[:title] = title
+# could I also do story = [title: title]?
+# could also do: 
+# story[:title] = get_input
 puts "Please give it a category:"
-category = get_input
-upvotes = calculate_upvotes(story, category)
-puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+story[:category] = get_input
+story[:upvotes] = calculate_upvotes(story)
+stories << story
+
+puts "Would you like to add another story? Enter 'y' or 'n'"
+answer = get_input.downcase.to_s
+
+while answer == "y" do
+  puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
+  story = {}
+  puts "Please enter a News story:"
+  title = get_input
+  story[:title] = title
+  # could I also do story = [title: title]?
+  # could also do: 
+  # story[:title] = get_input
+  puts "Please give it a category:"
+  story[:category] = get_input
+  story[:upvotes] = calculate_upvotes(story)
+
+  puts "Would you like to add another story? Enter 'y' or 'n'"
+  answer = get_input.downcase.to_s
+  stories << story
+end
+
+puts stories
+
+stories.each do |story|
+  puts "New story added! #{story[:title]}, Category: #{story[:category].capitalize}, Current Upvotes: #{story[:upvotes]}"
+end 
+
+
+
+
+
+
+
+
+
+
+
+
+
