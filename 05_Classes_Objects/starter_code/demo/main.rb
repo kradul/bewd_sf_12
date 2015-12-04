@@ -1,3 +1,5 @@
+
+require 'pry'
 #Code Demo
 
 #Read this file and figure out what properties and methods the Apartment class needs to have!
@@ -19,8 +21,7 @@ puts "The current rent is: #{a1.rent}"
 puts "The current renters are: #{a1.renters}"
 # => "The current renters are: []"
 
-puts "Is the unit occupied?"
-a1.is_occupied?
+puts "Is the unit occupied? #{a1.is_occupied?}"
 # => false
 
 a1.rent_out(1700, "Alice")
@@ -33,8 +34,7 @@ a1.add_renter("Bob")
 puts "The current renters are: #{a1.renters}"
 # => "The current renters are: [Alice, Bob]"
 
-puts "Is the unit occupied?"
-a1.is_occupied?
+puts "Is the unit occupied? #{a1.is_occupied?}"
 # => true
 
 
