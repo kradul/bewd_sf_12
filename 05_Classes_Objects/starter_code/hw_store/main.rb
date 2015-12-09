@@ -22,12 +22,15 @@ require 'pry'
 ###
 #HINT: you need to use require_relative here
 ###
+
+require_relative 'hint_lib/grocerystore'
+
 #require_relative 'lib/grocerystore'
 #OR 
-#require_relative 'hint_lib/grocerystore'
+#require_relative 'hint_lib/grocerystore' [DONE]
 
 #create a new grocery store named Safeway
-safeway = GroceryStore.new("Safeway")
+safeway = GroceryStore.new("Safeway") #[THIS IS A NEW HASH CALLED SAFEWAY]
 
 #stock safeway with 5 bananas that cost 1 dollar each
 #Safeway stores it's items as a hash of hashes like this:
@@ -89,6 +92,17 @@ jack.add_to_cart(safeway, 'chocolate', 10)
 
 Write a method for a customer to remove an item from their shopping cart
 
+
+---------
+Bartek Notes:
+- add_to_cart define function
+- view_item
+- check_out
+- add_to_cart
+- decrease_item
+
+- declare and define shoping_cart
+-
 =end
 
 

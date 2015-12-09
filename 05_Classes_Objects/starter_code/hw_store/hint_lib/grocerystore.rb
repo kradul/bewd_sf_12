@@ -9,10 +9,15 @@ class GroceryStore
 	end
 
 	def stock_item (item_name, price, quantity)
+
+		safeway.merge!(item_name => {:price => price, :quanity quantity})
+
+
 		#add an item with a certain price to the inventory hash
 		#inventory stores: item name as the key and a hash of price and quantity as the value 
 		#Ex inventory = { 'banana' => {price: 1, quantity: 5},
 		# 				'oatmeal' => {price: 2, quantity: 10} }
+
 	end
 
 	def view_item (item_name)

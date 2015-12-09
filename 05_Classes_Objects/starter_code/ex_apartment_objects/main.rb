@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
@@ -17,8 +18,12 @@ a1 = Apartment.new("1A", 800, 600, 1, 1)
 a2 = Apartment.new("1B", 1400, 900, 2, 1)
 a3 = Apartment.new("2A", 2000, 1200, 3, 2)
 
+binding.pry
+
+
 #Create a new building with this name, address and number of apartments
 building = Building.new("Forest Lofts", "125 Elm St", 3)
+
 
 #set the building's apartments
 building.apartments = [a1, a2, a3]
