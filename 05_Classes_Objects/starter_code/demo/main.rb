@@ -37,4 +37,3 @@ puts "Is the unit occupied?"
 a1.is_occupied?
 # => true
 
-
