@@ -25,11 +25,14 @@
 |  | Lab Scaffolding | ex_users.md | 
 
 
+###Homework
+Due next Thursday. See Homework folder. It's a review of materila we learned in Ruby, especially classes and inheritance.
+
 
 ###Resources
 
 * Article on howstuffworks about webservers and requests: [How a request works](http://computer.howstuffworks.com/web-server2.htm)
-
+* Getting started with rails: [Ruby on Rails Guide](http://guides.rubyonrails.org/getting_started.html)
 
 
 #### Rails Command Line Interface Cheatsheet:
