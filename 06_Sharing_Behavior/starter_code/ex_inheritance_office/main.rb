@@ -1,6 +1,6 @@
-require_relative 'employee'
-require_relative 'manager'
-require_relative 'marketer'
+require_relative 'lib/employee'
+require_relative 'lib/manager'
+require_relative 'lib/marketer'
 
 #CODE FOR TESTING: (DO NOT EDIT)
 def assert_equal(expected, actual)
