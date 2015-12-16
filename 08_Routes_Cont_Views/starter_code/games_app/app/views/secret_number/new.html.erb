@@ -1,0 +1,5 @@
+<h1>Welcome to Secret Number Game</h1>
+<h2> Choose a number </h2>
+<% 1.upto(5) do |num| %>
+	<%= link_to(num, secret_number_show_path(num) ) %>
+<% end %>

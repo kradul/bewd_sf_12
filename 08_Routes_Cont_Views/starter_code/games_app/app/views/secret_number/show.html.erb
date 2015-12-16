@@ -1,0 +1,11 @@
+<h1>You selected:</h1>
+<% if @win %> 
+	<h2> YOU WIN!! 
+		<%= image_tag("games/cat-wins.gif") %>
+	</h2>
+<% else %> 
+	<h2> You lost </h2>
+	<h2> Your guess: <%= @guess %> </h2>
+	<h2> The secret number was <%= @secret_num %> </h2>
+	<%= image_tag("games/loser.gif") %>
+<% end %> 
