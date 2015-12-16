@@ -3,7 +3,36 @@
 #instance methods and variables
 class Robot
 	#has a type
+	attr_accessor :type
+	@@hive_mind_activated = false
+
+	def self.get_hive_mind ()
+		@@hive_mind_activated
+	end
+
+	def self.set_hive_mind(bool)
+		@@hive_mind_activated = bool
+	end
+
 	#can puts it type
+	def my_type()
+		puts "My type is #{self.type}"
+	end
+
+	def self.three_laws()
+		puts "Don't harm humans."
+		puts "Obey orders."
+		puts "Protect yourself."
+	end
+
+	def attack ()
+		if @@hive_mind_activated
+			puts "DESTROY!"
+		else
+			puts "We are peaceful robots"
+		end
+	end
+
 end
 
 #Now add a class method, using Robot

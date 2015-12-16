@@ -7,12 +7,11 @@ class Polygon
 	end
 
 	def num_sides()
-		@len_sides.length
+		@len_sides.length()
 	end
 
 	def is_regular()
-		#check if all sides are the same length
-		return @len_sides.uniq().empty?
+		@len_sides.uniq().length == 1
 	end
 
 	def to_s()
@@ -22,22 +21,22 @@ end
 
 
 class Rectangle < Polygon
+	attr_accessor :l, :w
 
-	attr_accessor :length, :width
-
-	def initialize(length, width)
-		@length = length
-		@width = width
-		super([length, width, length, width])
+	def initialize (length, width)
+		@l = length
+		@w = width
+		@len_sides = [length, width, length, width]
 	end
 
 	def area ()
-		return @length * @width
+		@l * @w
 	end
 
 	def to_s ()
-		super() + " It's length and width are #{@length}, #{@width}."
+		super() + " I have area #{self.area()}"
 	end
+
 end
 
 
