@@ -11,6 +11,12 @@
 
 
 
+###Homework
+Finish movie_app - by Tuesday Jan 5th
+
+Project proposals (see homework repo) - Thursday Jan 7th
+
+
 ###Schedule
 
 
@@ -56,8 +62,4 @@ Rake executes tasks defined in rake files which describe tasks to be completed u
 
 [User guide to rake](http://docs.rubyrake.org/user_guide/index.html
 )
-
-
-###Homework
-Finish movie_app
 
