@@ -118,6 +118,10 @@ When a user clicks 'Search'
 4.  Searches shirts by name or description fields
 
 ---
+## Routes
+Use ```resource: shirt``` as a shortcut for producing routes (Create Update Delete Read) for a resource.
+
+---
 
 ##Exercise: Movie App - Search
 
