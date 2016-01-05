@@ -1,0 +1,19 @@
+<h1>All the shirts!</h1>
+<p><%= notice %></p>
+
+<h3><%= link_to "+ Add New Shirt", new_shirt_path %></h3>
+
+<br/>
+
+<% @shirts.each do |shirt| %>
+  <section>
+    <h3><%= link_to shirt.name, shirt_path(shirt.id) %></h3>
+    <p>
+      <%= shirt.description %>
+    </p>
+    <p>
+      <%= image_tag shirt.image %>
+    </p>
+  </section>
+<% end %>
+
