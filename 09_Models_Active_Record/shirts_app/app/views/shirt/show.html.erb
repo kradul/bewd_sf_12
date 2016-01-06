@@ -1,0 +1,6 @@
+<h1>All the shirts!</h1>
+<% @all_shirts.each do |s| %>
+	<h2><%= s.name %> </h2>
+	<p> <%= s.description %></p>
+	<p> <%= s.size %></p>
+<% end %>

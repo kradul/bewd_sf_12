@@ -1,11 +1,6 @@
-GamesApp::Application.routes.draw do
-  get "rock_paper_scissors/new"
-  get "secret_number/new"
-  get "secret_number/show"
-
-  root 'game#index'
-
-  get "game/index"
+ShirtsApp::Application.routes.draw do
+  root 'shirt#show'
+  get "shirt/show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

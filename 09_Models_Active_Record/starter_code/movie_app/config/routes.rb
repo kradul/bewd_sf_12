@@ -1,11 +1,11 @@
-GamesApp::Application.routes.draw do
-  get "rock_paper_scissors/new"
-  get "secret_number/new"
-  get "secret_number/show"
+Rails.application.routes.draw do
+  get 'movie/index'
 
-  root 'game#index'
+  root 'movie#index'
+  
 
-  get "game/index"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -46,7 +46,7 @@ GamesApp::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
