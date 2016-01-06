@@ -13,12 +13,20 @@
 *	Lab Time
 
 ---
-
-
 ##Review
 ###Routes, Model, View, Controller
 
-[Request Response Diagram](../../assets/rails/response_request.png)
+* Routes define which request URL maps to which Controller/Action pair (which method on the controller), use this to edit homepage (root)
+* MVC diagram
+	* Controller acts as go-between for view and model, handles requests (```rails generate controller Shirt index new```)
+	* View displays info
+	* Model stores data and communicates with Database (```rails generate model Shirt name:string description:text```)
+* Database and Model (ActiveRecord)
+	* Model class => table in DB
+	* Model instance => row in DB
+	* after creating model, DB needs to be updated to match ```rake db:migrate```
+	* populate DB by creating model instances in the db/seeds.rb file and running ```rake db:seed```
+	* use ```rails console``` to try out ActiveRecord commands (use ```rails dbconsole``` to execute SQL directly)
 
 ---
 
