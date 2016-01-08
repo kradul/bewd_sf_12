@@ -5,15 +5,11 @@
 
 <br/>
 
-<% @shirts.each do |shirt| %>
-  <section>
-    <h3><%= link_to shirt.name, shirt_path(shirt.id) %></h3>
-    <p>
-      <%= shirt.description %>
-    </p>
-    <p>
-      <%= image_tag shirt.image %>
-    </p>
-  </section>
-<% end %>
+<%= render("list") %>
 
+
+
+<%= form_tag "/", method: "GET" do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>		
