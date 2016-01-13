@@ -1,0 +1,18 @@
+<% if @shirt.errors.any? %>
+  <h2>There were errors saving your shirt</h2>
+  <ul>
+    <% @shirt.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @shirt do |f| %>
+ <%= f.label :name %>:
+ <%= f.text_field :name %><br />
+<%= f.label :description %>:
+ <%= f.text_field :description %><br />
+ <%= f.label :image %>:
+ <%= f.text_field :image %><br />
+  <%= f.submit %>
+<% end %>
