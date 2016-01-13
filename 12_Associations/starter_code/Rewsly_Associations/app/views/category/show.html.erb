@@ -1,0 +1,17 @@
+<h1>Category#show</h1>
+<p>Find me in app/views/category/show.html.erb</p>
+
+<p><%= link_to("back to home page", root_path) %> </p>
+
+
+<h2><%= @category.title %> </h2>
+
+
+<ul>
+ <% @category.story.each do |story| %>
+
+ 	<li><%=link_to(story.title, story_path(story.id)) %></li>
+
+ <% end %>
+
+</ul>
