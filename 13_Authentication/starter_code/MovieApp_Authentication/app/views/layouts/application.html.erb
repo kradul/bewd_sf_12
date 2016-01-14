@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoviesApp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if !current_page?(root_path) %>
+	<%= link_to "Back to homepage", "/" %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
