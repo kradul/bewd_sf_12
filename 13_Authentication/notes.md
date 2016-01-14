@@ -213,6 +213,12 @@ Note how we create the new comment as part of the current user's list of comment
 
 Why don't we have to save? Because the create method creates and saves.
 
+Additional note: Adding an association to an existing model, in the migration file:
+
+```
+add_reference :comments, :user, index: true
+```
+
 ---
 ###(OPTIONAL INFO) Sidenote on Alerts:
 
