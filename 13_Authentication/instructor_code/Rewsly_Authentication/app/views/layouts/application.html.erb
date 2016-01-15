@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rewsly</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+  	<%= link_to "Back to homepage", root_path %>
+
+  	<% if user_signed_in? %>
+		<%= link_to "Profile", edit_user_registration_path %>
+		<%= link_to "Log out", destroy_user_session_path %>
+  	<% else %>
+  		<%= link_to "Log in", user_session_path %>
+  		<%= link_to "Sign up", new_user_registration_path %>
+  	<%end %>
+
+	<% flash.each do |key, value| %>
+	    <div class="alert alert-<%= key %>">
+	      <%= value %>
+	    </div>
+	<% end %>
+
+    <%= yield %>
+
+  </body>
+</html>
