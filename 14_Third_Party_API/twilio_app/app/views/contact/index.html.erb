@@ -1,0 +1,16 @@
+<h1>Welcome to the contacts app</h1>
+
+<div>
+<% @contacts.each do |contact| %>
+	<div>
+		<%= contact.name %>
+		<%= contact.phone %>
+
+		<%= form_tag send_text_url(id: contact.id) do %>
+			<%= text_area_tag :body %> 
+			<%= submit_tag "Send message" %>
+		<% end %>
+
+	</div>
+<% end %>
+</div>
