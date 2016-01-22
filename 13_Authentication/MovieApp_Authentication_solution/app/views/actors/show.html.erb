@@ -1,0 +1,8 @@
+<h1>Actor: <%=@actor.name%></h1>
+
+<p>This actor has acted in the following movies: </p>
+<ul>
+	<% @actor.movies.each do |movie| %>
+		<li><%= link_to movie.title, movie %></li>
+	<%end %>
+</ul>

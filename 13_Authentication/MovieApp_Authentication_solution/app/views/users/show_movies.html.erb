@@ -1,0 +1,8 @@
+<h1>Here are your the movies you've watched:</h1>
+<p>
+<ul>
+<% @movies.each do |m| %>
+	<li><%= link_to m.title, m%></li>
+<% end %>
+</ul>
+</p>

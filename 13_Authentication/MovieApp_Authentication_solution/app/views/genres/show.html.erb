@@ -1,0 +1,8 @@
+<h1>Genre: <%=@genre.title%></h1>
+
+<p>The following movies belong to this genre:</p>
+<ul>
+	<% @genre.movies.each do |movie| %>
+		<li><%= link_to movie.title, movie %></li>
+	<%end %>
+</ul>

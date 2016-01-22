@@ -1,0 +1,10 @@
+<h1><%= @movie.title %></h1>
+<p><%= @movie.genre ? @movie.genre.title : nil%></p>
+<p><%= @movie.description %></p>
+
+<p>This movie has the following actors: </p>
+<ul>
+	<% @movie.actors.each do |actor| %>
+		<li><%= link_to actor.name, actor %></li>
+	<%end %>
+</ul>
