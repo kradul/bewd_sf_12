@@ -31,6 +31,7 @@ Due Lesson 15: Milestone 2
 
 *	At least 5 User Stories.
 *	Diagram of database schema (models, attributes for those models, associations).
+*	Continue Wireframing, have an idea of how all parts of your application will function.
 
 This milestone is a great way for you to identify major hurdles in a project before you begin to code. 
 
