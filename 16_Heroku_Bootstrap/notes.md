@@ -48,12 +48,6 @@
 
 Download the Postgres app for mac OS, http://postgresapp.com/
 
-Then:
-
-```
-$ gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.5/bin/pg_config
-```
-
 -------------
 ##Create Heroku Account
 
@@ -86,6 +80,13 @@ $ heroku login
 
 ```
 rails new myapp --database=postgresql
+```
+
+
+Then:
+
+```
+$ gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.5/bin/pg_config
 ```
 
 Optional (recommended)
@@ -175,6 +176,14 @@ To get rid of the "herokuapp" part of the url requires buying your own domain na
 
 ----
 
+##Configuring postgres app for localhost
+
+The database needs to be created and migrated on your own computer:
+
+```
+$ rake db:create
+$ rake db:migrate
+```
 
 
 
@@ -212,6 +221,13 @@ development:
 
 NOTE: the database setting cannot have a extension the way it does with sqlite (ex. "myapp_dev.sqlite") 
 
+NOTE: you may have to create a new user (called "myapp").
+Open up postgres (using the Postgres.app) then inside that shell:
+
+```
+CREATE USER myapp SUPERUSER;
+```
+
 Push your app to Heroku and manually migrate the remote database:
 
 ```
@@ -223,6 +239,7 @@ and seed:
 ```
 heroku run rake db:seed
 ```
+
 ---
 
 ###PostgreSQL on production (sqlite on development)
