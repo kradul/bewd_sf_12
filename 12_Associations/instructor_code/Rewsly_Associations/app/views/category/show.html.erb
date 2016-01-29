@@ -1,0 +1,9 @@
+<h1>Category</h1>
+<p><%= link_to "Back to home page", root_path %></p>
+
+<h2><%= @category.title %></h2>
+<ul>
+	<% @category.stories.each do |story| %>
+		<li><%= link_to story.title, story_path(story.id) %></li>
+	<%end%>
+</ul>

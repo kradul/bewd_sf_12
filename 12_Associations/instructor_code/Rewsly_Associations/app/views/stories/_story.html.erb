@@ -1,0 +1,14 @@
+<article>
+  <li>
+  <header>
+    <%= link_to story.title, story.link %>
+  </header>
+  <p>Upvotes: <%= story.upvotes %> | 
+  Categories: 
+  <% story.categories.each do |category| %>
+  	<%= link_to category.title, category_path(category.id) %>
+  <%end %>
+  |
+  <%= link_to "Comments", story %></p>
+  </li>
+</article>
