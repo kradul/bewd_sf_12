@@ -1,4 +1,5 @@
 GamesApp::Application.routes.draw do
+  get "rock_paper_scissors/new"
   get "secret_number/new"
   get "secret_number/show"
 

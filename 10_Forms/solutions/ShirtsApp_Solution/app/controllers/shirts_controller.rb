@@ -24,7 +24,7 @@ class ShirtsController < ApplicationController
   end
 
   def update
-    @shirt.update shirt_params
+    @shirt.update safe_shirt_params
     redirect_to @shirt
   end
 

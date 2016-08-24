@@ -1,13 +1,15 @@
-require_relative 'employee'
-require_relative 'manager'
-require_relative 'marketer'
+require 'pry'
 
-#CODE FOR TESTING: (DO NOT EDIT)
-def assert_equal(expected, actual)
-  unless expected == actual
-    abort "Expected #{expected} to match #{actual} on line #{caller.first.split(":")[1]}"
-  end
-end
+require_relative 'lib/employee'
+require_relative 'lib/manager'
+require_relative 'lib/marketer'
+
+# #CODE FOR TESTING: (DO NOT EDIT)
+# def assert_equal(expected, actual)
+#   unless expected == actual
+#     abort "Expected #{expected} to match #{actual} on line #{caller.first.split(":")[1]}"
+#   end
+# end
 
 #Run this file to test our your code.
 
@@ -19,9 +21,11 @@ assert_equal(manager.contact(), "john.snow@bewd.com")
 
 assert_equal(manager.full_name(), "FILL THIS IN with however you chose to format the managers name and title.")
 
-assert_equal(Employee.num_employees, 2)
+assert_equal(Employee.get_num_employees, 2)
 
 marketer = Marketer.new("Snow", "White", "@lovemydwarfs")
 assert_equal(marketer.contact(), "@lovemydwarfs") 
 
-assert_equal(Employee.num_employees, 3)
+assert_equal(Employee.get_num_employees, 3)
+
+binding.pry

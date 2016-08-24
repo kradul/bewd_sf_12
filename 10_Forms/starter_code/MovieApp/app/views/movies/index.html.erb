@@ -1,5 +1,12 @@
 <h1>Welcome to the Movies App!</h1>
 
-<br/><br/>
+<br/>
+
+<%= form_tag "/", method: "GET" do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Search yo" %>
+<% end %>		
+
+<br>
 
 <%= render 'list' %>

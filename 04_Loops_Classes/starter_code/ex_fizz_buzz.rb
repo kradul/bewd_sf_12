@@ -4,8 +4,14 @@ def assert_equal(expected, actual)
 end
 
 # Write a program that prints the numbers from 1 to 100. 
+
+
+(1...100).each.do |n|
+ puts n
+ end
+ 
+
 # But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
-# For numbers which are multiples of both three and five print “FizzBuzz”.
 #
 # Your code here
 
@@ -22,3 +28,7 @@ assert_equal fizzbuzz(5175), "FizzBuzz"
 #1.upto(100) do |number|
 #  puts fizzbuzz(number)
 #end
+
+
+
+# For numbers which are multiples of both three and five print “FizzBuzz”.

@@ -1,6 +1,24 @@
 #Building Class
 class Building
+<<<<<<< HEAD
+	attr_accessor :name, :addy, :num_apt, :apartments
+
+	def initialize (nam, ad, num_ap)
+		@name = nam
+		@addy = ad
+		@num_apt = num_ap
+		@apartments = []
+	end
+
+
+
+
+	def add_apartment (apartment)
+		@apartments << apartment
+	end
+=======
 	attr_accessor :name, :address, :num_apartments, :apartments
+>>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 
 	def initialize(name, address, num_apartments)
 		@name = name

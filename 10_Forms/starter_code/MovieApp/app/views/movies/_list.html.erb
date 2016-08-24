@@ -2,7 +2,10 @@
   <section>
     <header>
       (<b><%= movie.year_released %></b>)
-      <%= link_to movie.title, movie %>
+
+     <%= link_to(movie.title, movie_path(movie)) %>
+
+
     </header>
     <%= movie.description %>
   </section>

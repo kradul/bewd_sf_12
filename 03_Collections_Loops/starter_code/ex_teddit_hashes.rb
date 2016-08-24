@@ -14,6 +14,9 @@
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
 #
+require 'pry'
+
+
 
 def get_input
   gets.strip
@@ -35,10 +38,48 @@ def calculate_upvotes(story, category)
   upvotes
 end
 
+def create_story_hash (a, b, c) #creates a story hash
+  # story = hash.new
+  # story[:title] = title
+  # story[:category] = category
+  # story[:upvotes] = upvotes
+
+  story = {title: a, category: b, upvotes: c}
+
+end
+
+
+def create_teddit_story (array)
+  puts "Please give it a category:"
+  category = get_input
+  upvotes = calculate_upvotes(story, category)
+
+  puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+
+  new_story = create_story_hash(story, category, upvotes)
+
+  array.push(new_story)
+end
+
+def ask_again (arrau)
+  puts "Would you like to build another story? Type 'y' or 'no'"
+  answer = get_input
+
+  if answer == 'y'
+    create_teddit_story(array)
+  else
+   puts "thanks"
+  end  
+end
+
+
+stories_array = []
+
+
 puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
-puts "Please enter a News story:"
-story = get_input
-puts "Please give it a category:"
-category = get_input
-upvotes = calculate_upvotes(story, category)
-puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+persisting_story_array = create_teddit_story(stories_array)
+ask_again (persisting_story_array)
+
+
+
+

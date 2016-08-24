@@ -1,5 +1,10 @@
 class Shirt < ActiveRecord::Base
-  #validates :image, format: /\A\w+\.png\z/
+  validates :name, :description, :image, presence: true
+  validates :description, length: { minimum: 10 } 
+
+
+  validates :image, format: /\A\w+\.png\z/
+
 
   def self.search_for(query)
   	self.where("name LIKE :query OR description LIKE :query", query: "%#{query}%")

@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'pry-rails',:group => :development
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
 
@@ -32,6 +35,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -44,5 +50,3 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
-gem 'pry'

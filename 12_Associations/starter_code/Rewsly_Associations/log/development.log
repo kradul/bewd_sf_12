@@ -1,0 +1,1252 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 18:39:00 -0800
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 18:39:02 -0800
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.5ms)
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStories (20130622215231)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "upvotes" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130622215231"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 18:40:43 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.1ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered collection (0.0ms)
+  Rendered stories/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1236ms (Views: 1207.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/category.js?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/stories.css?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/stories.js?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-12 18:40:45 -0800
+
+
+Started GET "/?utf8=%E2%9C%93&q=stuff&commit=Search" for 127.0.0.1 at 2016-01-12 18:41:08 -0800
+Processing by StoriesController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"stuff", "commit"=>"Search"}
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT "stories".* FROM "stories" WHERE (title LIKE '%stuff%' OR category LIKE '%stuff%')[0m
+SQLite3::SQLException: no such column: category: SELECT "stories".* FROM "stories"  WHERE (title LIKE '%stuff%' OR category LIKE '%stuff%')
+  Rendered stories/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: category: SELECT "stories".* FROM "stories"  WHERE (title LIKE '%stuff%' OR category LIKE '%stuff%')):
+     9: 
+    10: <div id="stories">
+    11:   <ul>
+    12:     <%= render @stories %>
+    13:   </ul>
+    14: </div>
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:34:16 -0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20160113025015)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "story_id" integer, "post" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_comments_on_story_id" ON "comments" ("story_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160113025015"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateCategories (20160113025112)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160113025112"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:34:31 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.1ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered collection (0.1ms)
+  Rendered stories/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 552ms (Views: 546.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/stories.css?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/stories.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/category.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:32 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "stories" ("created_at", "link", "title", "updated_at", "upvotes") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["link", "http://qz.com/85400/moving-to-open-plan-offices-makes-employees-less-productive-less-happy-and-more-likely-to-get-sick/#"], ["title", "Open-plan offices make employees less productive, less happy, and more sick"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["upvotes", 1]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "stories" ("created_at", "link", "title", "updated_at", "upvotes") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["link", "http://yinwang0.wordpress.com/2012/01/03/ydiff/"], ["title", "ydiff: Structural Comparison of Programs"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["upvotes", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stories" ("created_at", "link", "title", "updated_at", "upvotes") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["link", "http://www.motherjones.com/politics/2013/05/ak-47-semi-automatic-rifle-building-party"], ["title", "I Built This AK-47. It's Legal and Totally Untraceable."], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["upvotes", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "categories" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["title", "Productivity"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "categories" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["title", "Politics"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["title", "Office"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["title", "Business"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00], ["title", "Dev"], ["updated_at", Wed, 13 Jan 2016 03:34:47 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:34:57 -0800
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.1ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/_story.html.erb (2.0ms)
+  Rendered stories/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 69ms (Views: 21.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2016-01-12 19:34:57 -0800
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2016-01-12 19:34:57 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-01-12 19:40:00 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-01-12 19:40:03 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.6ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2016-01-12 19:40:03 -0800
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-01-12 19:40:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:40:04 -0800
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.2ms)[0m  SELECT "stories".* FROM "stories"
+ERROR: compiling _app_views_stories__story_html_erb__391804772878537962_70210396940400 RAISED /Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to 
+ ^
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_stories__story_html_erb__391804772878537962_70210396940400(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "stories/_story";_old_output_buffer = @output_buffer;story = story = local_assigns[:story];story_counter = story_counter = local_assigns[:story_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<article>
+  <li>
+  <header>
+    ';@output_buffer.append=( link_to story.title, story.link );@output_buffer.safe_append='
+  </header>
+  <p>Upvotes: ';@output_buffer.append=( story.upvotes );@output_buffer.safe_append=' | 
+  Categories: 
+'; story.categories.each do |category|
+<%=link_to 
+
+
+	<%end 
+@output_buffer.safe_append='
+  |
+  ';@output_buffer.append=( link_to "Comments", story );@output_buffer.safe_append='</p>
+  </li>
+</article>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:403:in `_run__4424292437324532287__process_action__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered stories/_story.html.erb (3.7ms)
+  Rendered stories/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to 
+ ^
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category|
+     9: <%=link_to 
+    10: 
+    11: 
+    12: 	<%end %>
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:40:04 -0800
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.2ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+ERROR: compiling _app_views_stories__story_html_erb__391804772878537962_70210396940400 RAISED /Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to 
+ ^
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_stories__story_html_erb__391804772878537962_70210396940400(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "stories/_story";_old_output_buffer = @output_buffer;story = story = local_assigns[:story];story_counter = story_counter = local_assigns[:story_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<article>
+  <li>
+  <header>
+    ';@output_buffer.append=( link_to story.title, story.link );@output_buffer.safe_append='
+  </header>
+  <p>Upvotes: ';@output_buffer.append=( story.upvotes );@output_buffer.safe_append=' | 
+  Categories: 
+'; story.categories.each do |category|
+<%=link_to 
+
+
+	<%end 
+@output_buffer.safe_append='
+  |
+  ';@output_buffer.append=( link_to "Comments", story );@output_buffer.safe_append='</p>
+  </li>
+</article>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:403:in `_run__4424292437324532287__process_action__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered stories/_story.html.erb (3.6ms)
+  Rendered stories/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to 
+ ^
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category|
+     9: <%=link_to 
+    10: 
+    11: 
+    12: 	<%end %>
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:41:07 -0800
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.1ms)[0m  SELECT "stories".* FROM "stories"
+ERROR: compiling _app_views_stories__story_html_erb__391804772878537962_70210396940400 RAISED /Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to 
+ ^
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_stories__story_html_erb__391804772878537962_70210396940400(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "stories/_story";_old_output_buffer = @output_buffer;story = story = local_assigns[:story];story_counter = story_counter = local_assigns[:story_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<article>
+  <li>
+  <header>
+    ';@output_buffer.append=( link_to story.title, story.link );@output_buffer.safe_append='
+  </header>
+  <p>Upvotes: ';@output_buffer.append=( story.upvotes );@output_buffer.safe_append=' | 
+  Categories: 
+'; story.categories.each do |category|
+<%=link_to 
+
+
+	<%end 
+@output_buffer.safe_append='
+  |
+  ';@output_buffer.append=( link_to "Comments", story );@output_buffer.safe_append='</p>
+  </li>
+</article>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:403:in `_run__4424292437324532287__process_action__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered stories/_story.html.erb (3.6ms)
+  Rendered stories/index.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to 
+ ^
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category|
+     9: <%=link_to 
+    10: 
+    11: 
+    12: 	<%end %>
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:42:35 -0800
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.3ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+ERROR: compiling _app_views_stories__story_html_erb__391804772878537962_70210387738160 RAISED /Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to(category.title, category_path(category.id)) 
+ ^
+Function body:           def _app_views_stories__story_html_erb__391804772878537962_70210387738160(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "stories/_story";_old_output_buffer = @output_buffer;story = story = local_assigns[:story];story_counter = story_counter = local_assigns[:story_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<article>
+  <li>
+  <header>
+    ';@output_buffer.append=( link_to story.title, story.link );@output_buffer.safe_append='
+  </header>
+  <p>Upvotes: ';@output_buffer.append=( story.upvotes );@output_buffer.safe_append=' | 
+  Categories: 
+'; story.categories.each do |category|
+<%=link_to(category.title, category_path(category.id)) 
+@output_buffer.safe_append='
+
+';	end 
+@output_buffer.safe_append='
+  |
+  ';@output_buffer.append=( link_to "Comments", story );@output_buffer.safe_append='</p>
+  </li>
+</article>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:403:in `_run__4424292437324532287__process_action__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__2328173014167689356__call__callbacks'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Library/Ruby/Gems/2.0.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered stories/_story.html.erb (3.8ms)
+  Rendered stories/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/12_Associations/starter_code/Rewsly_Associations/app/views/stories/_story.html.erb:9: syntax error, unexpected '<'
+<%=link_to(category.title, category_path(category.id)) 
+ ^):
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category|
+     9: <%=link_to(category.title, category_path(category.id)) %>
+    10: 
+    11: 
+    12: 	<%end %>
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:43:30 -0800
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.1ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/_story.html.erb (19.2ms)
+  Rendered stories/index.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (Could not find table 'categories_stories'):
+     5:   </header>
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category| %>
+     9: <%= link_to(category.title, category_path(category.id)) %>
+    10: 
+    11: 
+  app/views/stories/_story.html.erb:8:in `_app_views_stories__story_html_erb__391804772878537962_70210398231080'
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:46:17 -0800
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.1ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/_story.html.erb (1.6ms)
+  Rendered stories/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Could not find table 'categories_stories'):
+     5:   </header>
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category| %>
+     9: <%= link_to(category.title, category_path(category.id)) %>
+    10: 
+    11: 
+  app/views/stories/_story.html.erb:8:in `_app_views_stories__story_html_erb__391804772878537962_70210398231080'
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:46:19 -0800
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.2ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/_story.html.erb (1.2ms)
+  Rendered stories/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Could not find table 'categories_stories'):
+     5:   </header>
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category| %>
+     9: <%= link_to(category.title, category_path(category.id)) %>
+    10: 
+    11: 
+  app/views/stories/_story.html.erb:8:in `_app_views_stories__story_html_erb__391804772878537962_70210398231080'
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:55:12 -0800
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.2ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  Rendered stories/_story.html.erb (1.5ms)
+  Rendered stories/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Could not find table 'categories_stories'):
+     5:   </header>
+     6:   <p>Upvotes: <%= story.upvotes %> | 
+     7:   Categories: 
+     8: <% story.categories.each do |category| %>
+     9: <%= link_to(category.title, category_path(category.id)) %>
+    10: 
+    11: 
+  app/views/stories/_story.html.erb:8:in `_app_views_stories__story_html_erb__391804772878537962_70210398231080'
+  app/views/stories/index.html.erb:12:in `_app_views_stories_index_html_erb__3762570672945052030_70210376915980'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateJoinTableStoriesCategories (20160113035851)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "categories_stories" ("story_id" integer NOT NULL, "category_id" integer NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160113035851"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-12 19:59:47 -0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by StoriesController#index as HTML
+  [1m[36mStory Load (0.1ms)[0m  [1mSELECT "stories".* FROM "stories"[0m
+  [1m[35mCategory Load (2.5ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_stories" ON "categories"."id" = "categories_stories"."category_id" WHERE "categories_stories"."story_id" = ?  [["story_id", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_stories" ON "categories"."id" = "categories_stories"."category_id" WHERE "categories_stories"."story_id" = ?[0m  [["story_id", 2]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_stories" ON "categories"."id" = "categories_stories"."category_id" WHERE "categories_stories"."story_id" = ?  [["story_id", 3]]
+  Rendered stories/_story.html.erb (25.3ms)
+  Rendered stories/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/stories.css?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/stories.js?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/category.js?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-12 19:59:48 -0800

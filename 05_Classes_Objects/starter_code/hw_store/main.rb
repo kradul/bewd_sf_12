@@ -17,30 +17,37 @@ how to structure your code and which methods you need to define.
 
 =end
 
-require 'pry'
-
 ###
 #HINT: you need to use require_relative here
 ###
+
+ 
+require 'pry'
+require_relative 'hint_lib/grocerystore'
+require_relative 'hint_lib/customer'
+
+
 #require_relative 'lib/grocerystore'
 #OR 
-#require_relative 'hint_lib/grocerystore'
+#require_relative 'hint_lib/grocerystore' [DONE]
 
 #create a new grocery store named Safeway
-safeway = GroceryStore.new("Safeway")
+safeway = GroceryStore.new("Safeway") #[THIS IS A NEW HASH CALLED SAFEWAY]
 
 #stock safeway with 5 bananas that cost 1 dollar each
 #Safeway stores it's items as a hash of hashes like this:
 # => inventory = { 'banana'=> {price: 1, quantity: 5} }
 #USE THE STRING "banana" as the KEY (not a symbol, it just makes it easier later)
 safeway.stock_item('banana', 1, 5)
-
 safeway.stock_item('oatmeal', 2, 10)
 safeway.stock_item('chocolate', 1.50 , 2)
 
-safeway.view_item('banana')
+
+safeway.view_item('oatmeal')
 # => "Safeway has 5 bananas for 1 dollar each."
 
+
+=begin
 #create a new customer named Jack who has $10
 jack = Customer.new("Jack", 10)
 
@@ -71,24 +78,7 @@ jack.add_to_cart(safeway, 'oatmeal', 6)
 jack.checkout(safeway)
 # => "Insufficient Funds. Your shopping cart has been cleared."
 
-=begin
-#BONUS 
-
-Implement better edge-case handling. Right now jack could buy 10 bananas 
-even if the store has 2. Then the store has -8 bananas! Let's fix that:
-
-#jack tries to buy 10 chocolate bars, but the store only has 2
-#give jack 2 and tell him there isn't enough for 10
-jack.add_to_cart(safeway, 'chocolate', 10)
-# => "Jack added 2 chocolate to his cart. Here is their shopping cart:"
-#   { "banana" => {price: 1, quantity: 1},
-#	 "chocolate" => {price: 1.50, quantity: 2}}
-# => "Safeway ran out of chocolate."
-
-
-
-Write a method for a customer to remove an item from their shopping cart
-
 =end
+
 
 

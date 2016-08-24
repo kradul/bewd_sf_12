@@ -1,0 +1,3002 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 18:44:08 -0800
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:376:in `check_pending!'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:364:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/logger_silence.rb:16:in `silence'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:363:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:392:in `_run__1775281053977046730__call__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShirts (20130611005022)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "shirts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "image" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130611005022"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 18:44:28 -0800
+Processing by ShirtsController#index as HTML
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')[0m
+  Rendered shirts/_list.html.erb (1.8ms)
+  Rendered shirts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1045ms (Views: 1022.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:44:29 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 18:45:38 -0800
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')
+  Rendered shirts/_list.html.erb (0.9ms)
+  Rendered shirts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:45:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:45:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:45:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:45:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:45:38 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 18:45:41 -0800
+Processing by ShirtsController#index as HTML
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')[0m
+  Rendered shirts/_list.html.erb (0.6ms)
+  Rendered shirts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:18 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"thing", "description"=>"", "image"=>""}, "commit"=>"Create Shirt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered shirts/new.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 53ms (Views: 46.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:20 -0800
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.3ms)[0m  SELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')
+  Rendered shirts/_list.html.erb (2.7ms)
+  Rendered shirts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:43 -0800
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:45 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 18:47:47 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"thing", "description"=>"", "image"=>""}, "commit"=>"Create Shirt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shirts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:47:48 -0800
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+Processing by ShirtsController#index as HTML
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')[0m
+  Rendered shirts/_list.html.erb (0.9ms)
+  Rendered shirts/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:55 -0800
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:48:58 -0800
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:22 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"d", "description"=>"", "image"=>""}, "commit"=>"Create Shirt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shirts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:51:24 -0800
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')
+  Rendered shirts/_list.html.erb (1.1ms)
+  Rendered shirts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:24 -0800
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:25 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"", "description"=>"", "image"=>"d"}, "commit"=>"Create Shirt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shirts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:52:26 -0800
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:26 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J7BODewlaVETvNKQMTopuSBpZyGdNUG+5Ln8WWbAWPo=", "shirt"=>{"name"=>"things", "description"=>"things", "image"=>"who.png"}, "commit"=>"Create Shirt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered shirts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:37 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 18:55:40 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J7BODewlaVETvNKQMTopuSBpZyGdNUG+5Ln8WWbAWPo=", "shirt"=>{"name"=>"things", "description"=>"thingssdfsdfd", "image"=>"who.png"}, "commit"=>"Create Shirt"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "shirts" ("created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 08 Jan 2016 02:55:40 UTC +00:00], ["description", "thingssdfsdfd"], ["image", "who.png"], ["name", "things"], ["updated_at", Fri, 08 Jan 2016 02:55:40 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/shirts/1
+Completed 302 Found in 10ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 18:55:40 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 18:55:41 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.1ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 18:55:43 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered shirts/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered shirts/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 18:55:44 -0800
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 19:01:00 -0800
+Processing by ShirtsController#index as HTML
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')[0m
+  Rendered shirts/_list.html.erb (13.5ms)
+  Rendered shirts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:01:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:01:01 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.9ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.4ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:01:07 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:01:09 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered shirts/_form.html.erb (4.0ms)
+  Rendered shirts/edit.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @shirt.errors.any? %>
+    2:   <h2>There were errors saving your shirt</h2>
+    3:   <ul>
+    4:     <% @shirt.errors.full_messages.each do |msg| %>
+  app/views/shirts/_form.html.erb:1:in `_app_views_shirts__form_html_erb___3034618806554829185_70283826919960'
+  app/views/shirts/edit.html.erb:3:in `_app_views_shirts_edit_html_erb___660802968684781414_70283840471840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.4ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:01:09 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered shirts/_form.html.erb (1.0ms)
+  Rendered shirts/edit.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @shirt.errors.any? %>
+    2:   <h2>There were errors saving your shirt</h2>
+    3:   <ul>
+    4:     <% @shirt.errors.full_messages.each do |msg| %>
+  app/views/shirts/_form.html.erb:1:in `_app_views_shirts__form_html_erb___3034618806554829185_70283839743740'
+  app/views/shirts/edit.html.erb:3:in `_app_views_shirts_edit_html_erb___660802968684781414_70283826639320'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.0ms)
+  Rendered shirts/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:24 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.3ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:08:27 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.3ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:28 -0800
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:08:54 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.1ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (1.0ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:56 -0800
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 55ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:08:58 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.2ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:09:36 -0800
+
+SyntaxError (/Users/bartekringwelski/GitHub/bewd/katya_repo/bewd_sf_12/11_Forms_Associations/starter_code/ShirtsApp/app/controllers/shirts_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:654:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:392:in `_run__1775281053977046730__call__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:09:44 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:44 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:09:45 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (1.0ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:46 -0800
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 72ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:53 -0800
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:09:55 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.5ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.3ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:10:11 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.8ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.3ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:12 -0800
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:10:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (86.8ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.3ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:10:34 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.4ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:10:35 -0800
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.4ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.0ms)
+  Rendered shirts/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 3.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:15 -0800
+
+
+Started GET "/shirts/12edit" for 127.0.0.1 at 2016-01-07 19:11:20 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"12edit"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "12edit"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Shirt with id=12edit):
+  app/controllers/shirts_controller.rb:54:in `load_shirt'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.0ms)
+  Rendered shirts/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:28 -0800
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:11:29 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.8ms)
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')
+  Rendered shirts/_list.html.erb (4.1ms)
+  Rendered shirts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+Processing by ShirtsController#index as HTML
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')[0m
+  Rendered shirts/_list.html.erb (3.9ms)
+  Rendered shirts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:11:30 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.6ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 19:11:31 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:32 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"thigns", "description"=>"sfsdfasdfasdfsadf", "image"=>".png"}, "commit"=>"Create Shirt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shirts/_form.html.erb (0.3ms)
+  Rendered shirts/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:37 -0800
+
+
+Started POST "/shirts" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+Processing by ShirtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"thigns", "description"=>"sfsdfasdfasdfsadf", "image"=>"333.png"}, "commit"=>"Create Shirt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "shirts" ("created_at", "description", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 08 Jan 2016 03:11:41 UTC +00:00], ["description", "sfsdfasdfasdfsadf"], ["image", "333.png"], ["name", "thigns"], ["updated_at", Fri, 08 Jan 2016 03:11:41 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/shirts/2
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/shirts/2" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered shirts/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+
+Started GET "/images/333.png" for 127.0.0.1 at 2016-01-07 19:11:41 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/333.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (57.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (74.4ms)
+
+
+Started GET "/shirts/2/edit" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mShirt Load (0.8ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shirts/2/edit" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:11:43 -0800
+
+
+Started GET "/shirts/2/edit" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:32 -0800
+
+
+Started GET "/shirts/2" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered shirts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shirts/2" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered shirts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+
+Started GET "/images/333.png" for 127.0.0.1 at 2016-01-07 19:12:34 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/333.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts/new" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+Processing by ShirtsController#new as HTML
+  Rendered shirts/_form.html.erb (0.0ms)
+  Rendered shirts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:37 -0800
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+Processing by ShirtsController#index as HTML
+  [1m[36mShirt Load (0.3ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')[0m
+  Rendered shirts/_list.html.erb (6.1ms)
+  Rendered shirts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shirts" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')
+  Rendered shirts/_list.html.erb (4.9ms)
+  Rendered shirts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.7ms)
+
+
+Started GET "/images/333.png" for 127.0.0.1 at 2016-01-07 19:12:38 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/333.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.3ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:12:40 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.3ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:12:41 -0800
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (0.5ms)
+  Rendered shirts/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:13:12 -0800
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.6ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (12.6ms)
+  Rendered shirts/edit.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.9ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (14.8ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.4ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.3ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.3ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2016-01-07 19:15:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (54.1ms)
+
+
+Started PATCH "/shirts/1" for 127.0.0.1 at 2016-01-07 19:15:06 -0800
+Processing by ShirtsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"things", "description"=>"thingssdfsdfd", "image"=>"who.png"}, "commit"=>"Update Shirt", "id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/shirts_controller.rb:30:in `update'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2016-01-07 19:15:06 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.7ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2016-01-07 19:15:06 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.7ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.3ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 27ms (Views: 8.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:16:07 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.8ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/_form.html.erb (6.1ms)
+  Rendered shirts/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shirts/1/edit" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shirts/_form.html.erb (5.2ms)
+  Rendered shirts/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:10 -0800
+
+
+Started PATCH "/shirts/1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+Processing by ShirtsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/wdBWcc0Bk/ilOV6vdi11cN4aKAQs05Y0IdZ679gw4=", "shirt"=>{"name"=>"thingsdddd", "description"=>"thingssdfsdfd", "image"=>"who.png"}, "commit"=>"Update Shirt", "id"=>"1"}
+  [1m[36mShirt Load (0.1ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "shirts" SET "name" = ?, "updated_at" = ? WHERE "shirts"."id" = 1[0m  [["name", "thingsdddd"], ["updated_at", Fri, 08 Jan 2016 03:16:13 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/shirts/1
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/shirts/1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shirts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/assets/shirts.css?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/assets/shirts.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+
+Started GET "/images/who.png" for 127.0.0.1 at 2016-01-07 19:16:13 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/who.png"):
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-07 20:17:06 -0800
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.4ms)[0m  SELECT "shirts".* FROM "shirts" WHERE (name LIKE '%%' OR description LIKE '%%')
+  Rendered shirts/_list.html.erb (33.2ms)
+  Rendered shirts/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 155ms (Views: 145.1ms | ActiveRecord: 0.4ms)

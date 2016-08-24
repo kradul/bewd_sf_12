@@ -1,6 +1,26 @@
 #Apartment class.
 class Apartment
+<<<<<<< HEAD
+	attr_accessor :unit, :rent, :sqft, :num_bedrooms, :num_bathrooms, :renters
+
+	def initialize (u, r, sqf, beds, baths)
+		@unit = unit
+		@rent = r
+		@sqft = sqf
+		@num_bedrooms = beds
+		@num_bathrooms = baths
+		@renters = []
+	end
+
+
+
+def add_person (person)
+	@apartment.push(apartment)
+end
+
+=======
 	attr_accessor :unit, :sqft, :num_bedrooms, :num_bathrooms, :rent, :renters
+>>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 
 	def initialize (unit, rent, sqft, bed, bath)
 		@unit = unit

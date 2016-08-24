@@ -1,6 +1,7 @@
 require 'pry'
 
 class ShirtsController < ApplicationController
+  before_action :load_shirt, only: [:edit, :show, :update]
 
   def index
     @shirts = Shirt.search_for(params[:q])
@@ -21,14 +22,23 @@ class ShirtsController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit #populates form
+    #load_shirt
+  end 
 
   def update
+    if @shirt.update(safe_shirt_params)
+        #if the shirt was successfully saved, redirect to the show shirt page
+      redirect_to @shirt
+    else
+        #if the shirt wasn't successfully saved, render the "new.html" view (allow user to edit it and try saving again)
+      render 'edit'
+    end
+
   end
 
   def show
-    @shirt = Shirt.find(params[:id])
+    #load_shirt
   end
 
   private
@@ -38,5 +48,12 @@ class ShirtsController < ApplicationController
     #(to help prevent malicious hacks)
     params.require('shirt').permit(:name, :description, :image)
   end
+
+  private
+  def load_shirt
+    @shirt = Shirt.find(params[:id])
+
+  end
+
 
 end
